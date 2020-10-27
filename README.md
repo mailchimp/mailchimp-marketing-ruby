@@ -1,6 +1,6 @@
 # Mailchimp Marketing — Ruby
 
-The official Ruby client library for the Mailchimp Marketing API (v1)
+The official Ruby client library for the Mailchimp Marketing API (v3)
 
 ## Installation
 
