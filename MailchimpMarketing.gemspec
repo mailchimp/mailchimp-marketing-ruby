@@ -16,7 +16,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "MailchimpMarketing/version"
 
 Gem::Specification.new do |s|
-  s.name        = "MailchimpMarketing"
+  s.name        = "mailchimp_marketing"
   s.version     = MailchimpMarketing::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Swagger-Codegen"]
