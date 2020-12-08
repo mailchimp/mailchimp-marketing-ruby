@@ -81,7 +81,7 @@ module MailchimpMarketing
     end
 
     # Delete order
-    def delete_order(store_id, order_id, opts = {})
+    def delete_store_order(store_id, order_id, opts = {})
       fail ArgumentError, "Missing required param: 'store_id'" if store_id.nil?
       fail ArgumentError, "Missing required param: 'order_id'" if order_id.nil?
 
@@ -685,7 +685,7 @@ module MailchimpMarketing
     end
 
     # Update order
-    def update_order(store_id, order_id, body, opts = {})
+    def update_store_order(store_id, order_id, body, opts = {})
       fail ArgumentError, "Missing required param: 'store_id'" if store_id.nil?
       fail ArgumentError, "Missing required param: 'order_id'" if order_id.nil?
       fail ArgumentError, "Missing required param: 'body'" if body.nil?
