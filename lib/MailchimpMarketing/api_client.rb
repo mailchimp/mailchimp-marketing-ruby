@@ -12,6 +12,7 @@ Swagger Codegen version: 2.4.12
 
 require 'json'
 require 'excon'
+require 'base64'
 
 module MailchimpMarketing
   class ApiClient
@@ -55,7 +56,7 @@ module MailchimpMarketing
 
     def call_api(http_method, path, opts = {})
       headers = {'Content-Type' => "application/json"}
-      headers[:Authorization] = "Basic #{@api_key}" if @is_basic_auth
+      headers[:Authorization] = "Basic #{encoded_basic_token(@api_key)}" if @is_basic_auth
       headers[:Authorization] = "Bearer #@access_token" if @is_oauth
 
       host = @server.length > 0 ? @host.sub('server', @server) : @host
@@ -118,5 +119,12 @@ module MailchimpMarketing
         fail "unknown collection format: #{collection_format.inspect}"
       end
     end
+
+    private
+
+      # Build base64 encoded token for basic auth.
+      def encoded_basic_token(api_key)
+        Base64.urlsafe_encode64("user:#{api_key}")
+      end
   end
 end
