@@ -14,6 +14,8 @@ module MailchimpMarketing
   class ApiError < StandardError
     attr_reader :status, :type, :title, :detail, :instance, :errors
 
+    attr_reader :response_headers, :response_body
+
     # Usage examples:
     #   ApiError.new
     #   ApiError.new("message")
