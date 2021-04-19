@@ -19,9 +19,9 @@ Gem::Specification.new do |s|
   s.name        = "MailchimpMarketing"
   s.version     = MailchimpMarketing::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Swagger-Codegen"]
+  s.authors     = ["Mailchimp"]
   s.email       = ["apihelp@mailchimp.com"]
-  s.homepage    = "https://github.com/swagger-api/swagger-codegen"
+  s.homepage    = "https://github.com/mailchimp/mailchimp-marketing-ruby"
   s.summary     = "Mailchimp Marketing API Ruby Gem"
   s.description = "The official Ruby client library for the Mailchimp Marketing API"
   s.license     = 'Apache-2.0'
