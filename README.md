@@ -6,7 +6,7 @@
 
 # Mailchimp Marketing — Ruby
 
-The official Ruby client library for the Mailchimp Marketing API (v1)
+The official Ruby client library for the Mailchimp Marketing API
 
 ## Installation
 
@@ -26,8 +26,8 @@ gem 'MailchimpMarketing', :git => 'https://github.com/mailchimp/mailchimp-market
 
 ```shell
 gem build MailchimpMarketing.gemspec
-gem install ./MailchimpMarketing-3.0.44.gem
-gem 'MailchimpMarketing', '~> 3.0.44'
+gem install ./MailchimpMarketing-3.0.45.gem
+gem 'MailchimpMarketing', '~> 3.0.45'
 ```
 
 ## Quick Start
@@ -367,4 +367,3 @@ Mailchimp Marketing libraries are available in the following languages:
   <img src="https://github.com/mailchimp/mailchimp-client-lib-codegen/blob/master/resources/images/lang_python.png?raw=true" width="44" height="44">
   </a>
 </div>
-
