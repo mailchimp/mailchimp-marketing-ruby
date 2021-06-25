@@ -65,7 +65,7 @@ module MailchimpMarketing
       res = nil
       case http_method.to_sym.downcase
       when :post, :put, :patch, :delete
-        res = conn.request(:method => http_method, :body => opts[:body])
+        res = conn.request(:method => http_method, :body => opts[:body], :query => opts[:query_params])
       when :get
         res = conn.get(:query => opts[:query_params])
       end
