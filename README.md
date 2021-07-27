@@ -26,8 +26,8 @@ gem 'MailchimpMarketing', :git => 'https://github.com/mailchimp/mailchimp-market
 
 ```shell
 gem build MailchimpMarketing.gemspec
-gem install ./MailchimpMarketing-3.0.55.gem
-gem 'MailchimpMarketing', '~> 3.0.55'
+gem install ./MailchimpMarketing-3.0.56.gem
+gem 'MailchimpMarketing', '~> 3.0.56'
 ```
 
 ## Quick Start
@@ -156,7 +156,6 @@ All URIs are relative to *https://server.api.mailchimp.com/3.0*
 | **conversations.get** | /conversations/{conversation_id} |
 | **conversations.get_conversation_messages** | /conversations/{conversation_id}/messages |
 | **conversations.get_conversation_message** | /conversations/{conversation_id}/messages/{message_id} |
-| **conversations.create_conversation_message** | /conversations/{conversation_id}/messages |
 | **customerJourneys.trigger** | /customer-journeys/journeys/{journey_id}/steps/{step_id}/actions/trigger |
 | **ecommerce.delete_store** | /ecommerce/stores/{store_id} |
 | **ecommerce.delete_store_cart** | /ecommerce/stores/{store_id}/carts/{cart_id} |
