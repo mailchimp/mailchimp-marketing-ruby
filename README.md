@@ -26,8 +26,8 @@ gem 'MailchimpMarketing', :git => 'https://github.com/mailchimp/mailchimp-market
 
 ```shell
 gem build MailchimpMarketing.gemspec
-gem install ./MailchimpMarketing-3.0.70.gem
-gem 'MailchimpMarketing', '~> 3.0.70'
+gem install ./MailchimpMarketing-3.0.71.gem
+gem 'MailchimpMarketing', '~> 3.0.71'
 ```
 
 ## Quick Start
